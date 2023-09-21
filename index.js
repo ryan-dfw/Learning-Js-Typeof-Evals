@@ -1,6 +1,6 @@
 const evaluate = (values) =>
-  values.forEach((value) =>
-    console.log(value ? !!value : `the ${typeof value} is falsy`)
-  );
+  values
+    .map((value) => (value ? !!value : `the ${typeof value} is falsy`))
+    .forEach((message) => console.log(message));
 
 evaluate(["string", false, null, undefined, 0, ""]);
