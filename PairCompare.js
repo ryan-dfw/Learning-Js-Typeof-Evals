@@ -1,4 +1,4 @@
-const truthyEval = (paramArray) =>
+const pairEval = (paramArray) =>
   paramArray.map((pair) =>
     console.log(pair[0] === pair[1] || pair[2] === pair[3])
   );
@@ -12,4 +12,4 @@ const paramArray = [
   ["cake", "cake", "pie", "pie"],
 ];
 
-truthyEval(paramArray);
+pairEval(paramArray);

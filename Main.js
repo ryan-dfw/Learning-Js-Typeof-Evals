@@ -1,4 +1,5 @@
 const truthArray = ["string", false, null, undefined, 0, ""];
+
 const compArray = [
   [50, 51, 100],
   [99, -2, 0],
@@ -67,5 +68,4 @@ console.log("----------GREATER THAN FIVE----------");
 ].forEach((pair) => console.log(pair[0] >= 5 && pair[1] >= 5));
 
 console.log("----------PAIR AND COMPARE----------");
-
 pairEval(paramArray);
