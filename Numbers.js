@@ -1,11 +1,11 @@
-const valuesArrayA = [
+const compArray = [
   [50, 51, 100],
   [99, -2, 0],
   [0, 101, 100],
   [500, -500, 0],
 ];
 
-const valuesArrayB = [
+const signArray = [
   [-1000, 0],
   [-5, 0],
 ];
@@ -17,17 +17,17 @@ const compEval = (num1, num2, target) =>
     ? "equal to"
     : "less than";
 
-const signTest = (num1, num2) =>
+const signEval = (num1, num2) =>
   num1 + num2 < 0
     ? "a negative number"
     : num1 + num2 === 0
     ? "0"
     : "a positive number";
 
-valuesArrayA.forEach(([num1, num2, target]) =>
+compArray.forEach(([num1, num2, target]) =>
   console.log(`${num1 + num2} is ${compEval(num1, num2, target)} ${target}`)
 );
 
-valuesArrayB.forEach(([num1, num2]) =>
-  console.log(`${num1 + num2} is ${signTest(num1, num2)}`)
+signArray.forEach(([num1, num2]) =>
+  console.log(`${num1 + num2} is ${signEval(num1, num2)}`)
 );

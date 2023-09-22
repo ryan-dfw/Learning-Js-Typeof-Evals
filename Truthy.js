@@ -1,6 +1,6 @@
-const evaluate = (values) =>
+const truthTest = (values) =>
   values
     .map((value) => (value ? !!value : `the ${typeof value} is falsy`))
     .forEach((message) => console.log(message));
 
-evaluate(["string", false, null, undefined, 0, ""]);
+truthTest(["string", false, null, undefined, 0, ""]);
